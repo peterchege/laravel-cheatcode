@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class User extends Controller
 {
-    function index(){
-        echo "Hallo from controller";
+    function index($user){
+        echo $user;
+        echo " Hallo from controller";
     }
 }

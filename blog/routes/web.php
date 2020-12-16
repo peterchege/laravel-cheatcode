@@ -20,4 +20,4 @@ Route::get('/', function () {
 
 Route::view("about", 'about');
 
-Route::get('users', [User::class, 'index']);
+Route::get('users/{user}', [User::class, 'index']);
