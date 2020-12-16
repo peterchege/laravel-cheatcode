@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class User extends Controller
 {
-    function index($user){
-        echo $user;
-        echo " Hallo from controller";
+    public function index($user)
+    {
+        
+        return ['name'=> $user, "age"=>25];
     }
 }
